@@ -20,7 +20,7 @@ const { data:recipes, pending, error, refresh } = useAsyncData(
             <NuxtImg class="w-full aspect-ratio-square" v-if="recipe.image && recipe.image.url" :src="recipe.image.url" :alt="recipe.title" />
             <h3>{{ recipe.title }}</h3>
             <div class="line-clamp-3">
-              <p>{{ recipe.description }}</p>
+              <p>{{ recipe.description }}</p> 
             </div>
             <NuxtLink class="mt-4" :to="`/recettes/${recipe.slug}`">Voir la recette</NuxtLink>
           </li>
